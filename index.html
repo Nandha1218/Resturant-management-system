@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER MANAGEMENT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(bg.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent white background to the container */
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        #orderTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #orderTable th, #orderTable td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #orderTable th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, select {
+            width: calc(100% - 24px);
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NAN RESTAURANT</h1>
+        <form id="OrederForm" action="submit.php" method="post">
+            <table id="OrderTable">
+                <thead>
+                    <tr>
+                        <th>OrderID</th>
+                        <th>CustomerName</th>
+                        <th>phn_num</th>
+                        <th>OrderDate</th>
+                        <th>dish_name</th>
+                        <th>DishID</th>
+                        <th>veg_or_nonveg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="OrderID" required></td>
+                        <td><input type="text" name="CustomerName" required></td>
+                        <td><input type="text" name="phn_num" required></td>
+                        <td><input type="date" name="OrderDate" required></td>
+                        <td><input type="text" name="dish_name" required></td>
+                        <td><input type="text" name="DishID" required></td>
+                        <td>
+                            <select name="veg_or_nonveg" required>
+                                <option value="veg">Vegetarian</option>
+                                <option value="nonveg">Non-Vegetarian</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">SUBMIT ORDER</button>
+           
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

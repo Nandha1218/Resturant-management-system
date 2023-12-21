@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background:  linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(bg.png);;
+            background-size: cover;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Use rgba for a semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        #menuTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #menuTable th, #menuTable td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #menuTable th {
+            background-color: #f2f2f2;
+        }
+
+        nav {
+            background: #f2f2f2;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font: size 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 200px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: wheat;
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+
+        a.active, a:hover {
+            background: #1b9bff;
+            transition: 5s;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu</h1>
+        <table id="menuTable">
+
+            <thead>
+                <tr>
+                    <th>DishID</th>
+                    <th>Dish Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Spaghetti Bolognese</td>
+                    <td>Pasta</td>
+                    <td>12.99</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Grilled Chicken Salad</td>
+                    <td>Salad</td>
+                    <td>10.99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Baked Salmon</td>
+                    <td>Seafood</td>
+                    <td>15.99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Chicken Baguette</td>
+                    <td>Sandwich</td>
+                    <td>8.99</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cappuccino</td>
+                    <td>Beverage</td>
+                    <td>3.99</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Spinach Salad</td>
+                    <td>Salad</td>
+                    <td>9.99</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Buffalo Chicken Wings</td>
+                    <td>Appetizer</td>
+                    <td>7.99</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Red Wine Glass</td>
+                    <td>Beverage</td>
+                    <td>6.99</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Espresso</td>
+                    <td>Beverage</td>
+                    <td>2.99</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Dark Chocolate Cake</td>
+                    <td>Dessert</td>
+                    <td>8.99</td>
+                </tr>
+                
+    </div>
+    <script>
+        function redirectToIndex() {
+            // Redirect to index.html
+            window.location.href = 'index.html';
+        }
+        function redirectToupdate() {
+            // Redirect to index.html
+            window.location.href = 'update.html';
+        }
+        function redirectTodelete() {
+            // Redirect to index.html
+            window.location.href = 'home.html';
+        }
+        
+    </script>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
